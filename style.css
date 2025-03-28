@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(montagnik.jpg), url(kvartira.jpg);
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: 45vw 33vw, 55vw 33vw;
+}
+
+/* Контейнер с логотипом и контактами */
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 23vw;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+/* Логотип (слева) */
+.logo {
+    width: 20%;
+    padding-top: 1vw;
+    flex-shrink: 0;
+}
+
+/* Блок с номером и кнопкой */
+.contact-info {
+    position: relative;
+    left: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 30vw;
+}
+
+/* Номер */
+.number {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    position: relative;
+    left: 0;
+}
+
+/* Кнопка "Позвоните мне" */
+.call-me {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    left: 90px;
+    top: 8px;
+}
+
+/* Адаптивность для средних экранов (планшеты) */
+@media (max-width: 1200px) {
+    .container {
+        padding-right: 10vw;
+    }
+    .contact-info {
+        left: 200px;
+        max-width: 40vw;
+    }
+    .call-me {
+        left: 50px;
+    }
+}
+
+/* Адаптивность для мобильных телефонов */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+    }
+    .logo {
+        width: 40%;
+    }
+    .contact-info {
+        left: 0;
+        align-items: center;
+    }
+    .number {
+        font-size: 1.4rem;
+    }
+    .call-me {
+        left: 0;
+        top: 5px;
+        font-size: 1rem;
+    }
+}
