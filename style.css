@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(images/montagnik.jpg), url(images/kvartira.jpg);
+    background-image: url(montagnik.jpg), url(kvartira.jpg);
     background-position: top left, top right;
     background-repeat: no-repeat;
     background-size: 45vw 30vw, 55vw 30vw; /* Уменьшил высоту фото */
