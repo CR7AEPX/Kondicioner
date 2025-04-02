@@ -6,111 +6,137 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(montagnik.jpg), url(kvartira.jpg);
-    background-position: top left, top right;
-    background-repeat: no-repeat;
-    background-size: 45vw 30vw, 55vw 30vw; /* Уменьшил высоту фото */
 }
 
-/* Контейнер с логотипом и контактами */
 .container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 23vw;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.left, .right {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+}
+
+.left img, .right .background {
     width: 100%;
-    max-width: 100%;
-    position: relative;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;  
 }
 
-/* Логотип (слева) */
-.logo {
-    width: 18%;
-    padding-top: 1vw;
-    flex-shrink: 0;
-}
-
-/* Блок с номером и кнопкой */
-.contact-info {
+.right {
     position: relative;
-    left: 320px; /* Чуть левее, чтобы не выходил за границы */
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 28vw;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Номер */
-.number {
-    color: white;
-    font-weight: bold;
-    font-size: 1.4rem; /* Чуть уменьшил */
-    position: relative;
+.right .background {
+    position: absolute;
+    top: 0;
     left: 0;
-    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
-/* Кнопка "Позвоните мне" */
-.call-me {
+.right .content {
+    position: absolute;
+    z-index: 2;
     color: white;
-    font-size: 1rem; /* Сделал меньше */
-    position: relative;
-    left: 50px;
-    top: 5px;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    top: 25%;
 }
 
-/* Адаптивность для ноутбуков (1200px) */
-@media (max-width: 1200px) {
-    body {
-        background-size: 50vw 25vw, 50vw 25vw; /* Уменьшил высоту фото */
-    }
-    .container {
-        padding-right: 8vw;
-    }
-    .contact-info {
-        left: 150px;
-        max-width: 35vw;
-    }
-    .call-me {
-        left: 20px;
-    }
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 3;
 }
 
-/* Адаптивность для планшетов */
-@media (max-width: 992px) {
-    body {
-        background-size: 55vw 22vw, 45vw 22vw; /* Сделал фото еще компактнее */
-    }
-    .contact-info {
-        left: 100px;
-        max-width: 40vw;
-    }
+.logo {
+    width: 180px;
+    margin-left: 20px;
+}
+
+.phone {
+    font-size: 16px;
+    text-align: right;
+    margin-right: 20px;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.installment {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    body {
-        background-size: 60vw 35vw, 40vw 35vw;
-    }
     .container {
         flex-direction: column;
-        align-items: center;
-        padding-right: 0;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+        min-height: 300px; /* Делаем минимальную высоту */
+    }
+
+    .left img, .right .background {
+        max-height: 300px; /* Чтобы не занимало весь экран */
+    }
+
+    .right .content {
+        width: 90%;
         text-align: center;
+        top: 50%; /* Центрируем текст */
+        transform: translateY(-50%);
     }
-    .logo {
-        width: 40%;
-    }
-    .contact-info {
-        left: 0;
+
+    .header {
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 10px;
     }
-    .number {
-        font-size: 1rem; /* Сделал номер еще компактнее */
+
+    .logo {
+        margin: 0 auto;
+        width: 140px; /* Уменьшаем логотип */
     }
-    .call-me {
-        left: 0;
-        top: 5px;
-        font-size: 0.9rem; /* Уменьшил кнопку */
+
+    .phone {
+        font-size: 14px;
+        margin-top: 5px;
     }
 }
-
