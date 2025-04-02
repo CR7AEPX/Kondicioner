@@ -99,6 +99,28 @@ button {
     font-size: 18px;
     cursor: pointer;
 }
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left, .right {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .left img, .right .background {
+        max-height: 400px;
+    }
+
+    .right .content {
+        width: 90%;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
 
 @media (max-width: 768px) {
     .container {
@@ -109,18 +131,20 @@ button {
     .left, .right {
         width: 100%;
         height: auto;
-        min-height: 300px; /* Делаем минимальную высоту */
+        min-height: 250px;
     }
 
     .left img, .right .background {
-        max-height: 300px; /* Чтобы не занимало весь экран */
+        max-height: 250px;
     }
 
     .right .content {
         width: 90%;
         text-align: center;
-        top: 50%; /* Центрируем текст */
-        transform: translateY(-50%);
+        position: static;
+        transform: none;
+        margin: 10px auto;
+        padding: 10px;
     }
 
     .header {
@@ -132,11 +156,25 @@ button {
 
     .logo {
         margin: 0 auto;
-        width: 140px; /* Уменьшаем логотип */
+        width: 120px;
     }
 
     .phone {
         font-size: 14px;
         margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left img, .right .background {
+        max-height: 200px;
+    }
+
+    .right .content {
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 100px;
     }
 }
