@@ -377,22 +377,40 @@ button:hover {
     text-align: center;
     margin-top: 30px;
 }
+
 .logos {
     display: flex;
     justify-content: center;
     gap: 100px;
 }
+
 .logos img {
     width: 20%;
     max-width: 100%;
 }
+
+@media (max-width: 1024px) {
+    .logos {
+        gap: 50px;
+    }
+    .logos img {
+        width: 25%;
+    }
+}
 @media (max-width: 768px) {
-    .gallery {
-        display: flex;
-        align-items: center;
+    .logos {
+        gap: 20px;
+    }
+
+    .logos img {
+        width: 30%;
+    }
+}
+@media (max-width: 480px) {
+    .logos {
         gap: 10px;
     }
-    .gallery img {
-        width: 80%;
+    .logos img {
+        width: 28%;
     }
 }
