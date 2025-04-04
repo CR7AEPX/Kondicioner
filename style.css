@@ -1,207 +1,228 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-}
-
-.left,
-.right {
-  flex: 1;
-  position: relative;
-}
-
-.left img,
-.right .background {
-  width: 100%;
-  max-height: 500px;
-  height: auto;
-  object-fit: cover;
-}
-
-.right {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.right .background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.right .content {
-  position: absolute;
-  z-index: 2;
-  color: white;
-  text-align: left;
-  width: 80%;
-  max-width: 500px;
-  top: 25%;
-}
-
-.header {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  z-index: 3;
-}
-
-.logo {
-  width: 180px;
-  margin-left: 20px;
-}
-
-.phone {
-  font-size: 16px;
-  text-align: right;
-  margin-right: 20px;
-  color: white;
-}
-.phone span {
-  text-decoration: underline;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.phone span:hover {
-  color: rgb(255, 168, 7);
-}
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-.price {
-  font-size: 24px;
-  margin: 10px 0;
-  font-weight: bold;
-}
-.price span {
-  background-color: rgb(255, 168, 7);
-}
-.installment {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-button {
-  background-color: #00aaff;
-  color: white;
-  border-radius: 8px;
-  border: 2px solid white;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-button:hover {
-  background-color: #0098e4;
-  color: rgb(240, 240, 240);
-}
-@media (min-width: 1025px) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Блок основного контента */
   .container {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
     height: 100vh;
   }
-}
-@media (max-width: 1024px) {
-  .left {
-    display: none;
-  }
+  
+  .left,
   .right {
-    width: 100%;
-    height: 500px;
+    flex: 1;
     position: relative;
   }
-  .right .content {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    text-align: center;
-    margin: 0;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .right {
-    height: 250px;
-  }
+  
   .left img,
   .right .background {
-    max-height: 250px;
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    object-fit: cover;
   }
-  .header {
-    flex-direction: column;
+  
+  .right {
+    position: relative;
+    display: flex;
     align-items: center;
-    text-align: center;
-    padding: 10px;
+    justify-content: center;
   }
-  .logo {
-    margin: 0 auto;
-    width: 120px;
-  }
-  .phone {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .right {
-    height: 220px;
-  }
-  .left img,
+  
   .right .background {
-    max-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
+  
   .right .content {
-    font-size: 12px;
-    padding: 5px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    top: 25%;
   }
-  h2 {
-    font-size: 16px;
+  
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 3;
   }
-  .price {
-    font-size: 12px;
-  }
-  .installment {
-    font-size: 12px;
-  }
-  button {
-    font-size: 13px;
-    padding: 7px 14px;
-    border: 1px solid white;
-  }
+  
   .logo {
-    width: 100px;
+    width: 180px;
+    margin-left: 20px;
   }
-}
-
-.special-offer-section {
+  
+  .phone {
+    font-size: 16px;
+    text-align: right;
+    margin-right: 20px;
+    color: white;
+  }
+  .phone span {
+    text-decoration: underline;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .phone span:hover {
+    color: rgb(255, 168, 7);
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .price span {
+    background-color: rgb(255, 168, 7);
+  }
+  
+  .installment {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #00aaff;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  button:hover {
+    background-color: #0098e4;
+    color: rgb(240, 240, 240);
+  }
+  
+  /* Десктоп: ширина 1025px и выше */
+  @media (min-width: 1025px) {
+    .container {
+      flex-direction: row;
+      height: 100vh;
+    }
+  }
+  
+  /* Планшеты: до 1024px */
+  @media (max-width: 1024px) {
+    .left {
+      display: none;
+    }
+    .right {
+      width: 100%;
+      height: 500px;
+      position: relative;
+    }
+    .right .content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      text-align: center;
+      margin: 0;
+      padding: 10px;
+    }
+    /* Для спецпредложения убираем отрицательный отступ */
+    .special-offer-section {
+      margin-top: 0;
+    }
+  }
+  
+  /* Планшеты и небольшие экраны: до 768px */
+  @media (max-width: 768px) {
+    .right {
+      height: 250px;
+    }
+    .left img,
+    .right .background {
+      max-height: 250px;
+    }
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+    }
+    .logo {
+      margin: 0 auto;
+      width: 120px;
+    }
+    .phone {
+      display: none;
+    }
+    .special-offer-section {
+      margin-top: 0;
+    }
+  }
+  
+  /* Малые экраны: до 480px */
+  @media (max-width: 480px) {
+    .right {
+      height: 220px;
+    }
+    .left img,
+    .right .background {
+      max-height: 200px;
+    }
+    .right .content {
+      font-size: 12px;
+      padding: 5px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    .price {
+      font-size: 12px;
+    }
+    .installment {
+      font-size: 12px;
+    }
+    button {
+      font-size: 13px;
+      padding: 7px 14px;
+      border: 1px solid white;
+    }
+    .logo {
+      width: 100px;
+    }
+    .special-offer-section {
+      margin-top: 0;
+    }
+  }
+  
+  /* Секция спецпредложения */
+  .special-offer-section {
     width: 100%;
     margin: 0;
     padding: 0;
     margin-top: -150px;
   }
-
-  /* Верхний блок: фото + текст + обратный отсчёт */
+  
   .offer-top {
     display: flex;
     flex-wrap: wrap;
@@ -210,34 +231,33 @@ button:hover {
     background-color: #fff;
     padding: 20px;
   }
-
+  
   .offer-image {
     max-width: 300px;
     width: 100%;
     height: auto;
     object-fit: cover;
   }
-
+  
   .offer-info {
     max-width: 600px;
     width: 100%;
     text-align: center;
     margin: 20px;
   }
-
+  
   .offer-info h2 {
     font-size: 28px;
     color: #000;
     margin-bottom: 10px;
   }
-
+  
   .offer-info p {
     font-size: 18px;
     margin-bottom: 15px;
     color: #000;
   }
-
-  /* Секция обратного отсчёта */
+  
   .countdown {
     font-size: 32px;
     font-weight: bold;
@@ -245,7 +265,7 @@ button:hover {
     color: #000;
     margin-bottom: 10px;
   }
-
+  
   .units {
     font-size: 14px;
     color: #666;
@@ -254,20 +274,19 @@ button:hover {
     max-width: 220px;
     margin: 5px auto 0;
   }
-
-  /* Нижний блок с формой */
+  
   .offer-bottom {
-    background-color: #00a2e8; /* Ярко-синий блок */
+    background-color: #00a2e8;
     text-align: center;
     padding: 30px 20px;
   }
-
+  
   .offer-bottom h3 {
     font-size: 20px;
     color: #fff;
     margin-bottom: 20px;
   }
-
+  
   .offer-bottom form {
     display: flex;
     flex-wrap: wrap;
@@ -276,7 +295,7 @@ button:hover {
     max-width: 700px;
     margin: 0 auto;
   }
-
+  
   .offer-bottom input {
     flex: 1;
     min-width: 150px;
@@ -285,9 +304,9 @@ button:hover {
     border: none;
     border-radius: 4px;
   }
-
+  
   .offer-bottom button {
-    background-color: #fcb914; /* Оранжевая кнопка */
+    background-color: #fcb914;
     border: none;
     border-radius: 4px;
     padding: 12px 20px;
@@ -300,17 +319,10 @@ button:hover {
   .offer-bottom button:hover {
     background-color: #ffa500;
   }
-
-  /* Адаптивность */
-  @media (max-width: 1024px) {
-    .special-offer-section {
-        margin-top: -620px;
-      }
-  }
+  
+  /* Адаптивность для спецпредложения */
+  /* Для экранов до 768px и до 480px корректируем шрифты и отступы */
   @media (max-width: 768px) {
-    .special-offer-section {
-        margin-top: -950px;
-      }
     .offer-info h2 {
       font-size: 24px;
     }
@@ -326,11 +338,12 @@ button:hover {
     .offer-bottom h3 {
       font-size: 18px;
     }
-    .offer-bottom input, .offer-bottom button {
+    .offer-bottom input,
+    .offer-bottom button {
       width: 100%;
     }
   }
-
+  
   @media (max-width: 480px) {
     .offer-top {
       padding: 10px;
@@ -354,3 +367,4 @@ button:hover {
       font-size: 16px;
     }
   }
+  
