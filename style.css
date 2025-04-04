@@ -178,6 +178,7 @@ button {
   button {
     font-size: 13px;
     padding: 7px 14px;
+    border: 1px solid white;
   }
   .logo {
     width: 100px;
