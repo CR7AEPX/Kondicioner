@@ -390,6 +390,7 @@ button:hover {
     .gallery {
         display: flex;
         align-items: center;
+        gap: 10px;
     }
     .gallery img {
         width: 80%;
