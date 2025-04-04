@@ -321,7 +321,7 @@ button:hover {
   .offer-image {
     position: relative;
   top: 10px;
-  max-width: 400px;
+  max-width: 350px;
   }
   .offer-info h2 {
     font-size: 24px;
@@ -345,6 +345,10 @@ button:hover {
 }
 
 @media (max-width: 480px) {
+  .offer-image {
+    position: relative;
+    top: 0px;
+    }
   .offer-top {
     padding: 10px;
   }
