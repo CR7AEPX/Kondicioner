@@ -200,8 +200,6 @@ button:hover {
   padding: 0;
   margin-top: -150px;
 }
-
-/* Верхний блок: фото + текст + обратный отсчёт */
 .offer-top {
   display: flex;
   flex-wrap: wrap;
@@ -212,14 +210,15 @@ button:hover {
 }
 
 .offer-image {
-  max-width: 300px;
-  width: 100%;
+  max-width: 600px;
+  position: relative;
+  top: 20px;
   height: auto;
   object-fit: cover;
 }
 
 .offer-info {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   text-align: center;
   margin: 20px;
@@ -228,19 +227,20 @@ button:hover {
 .offer-info h2 {
   font-size: 28px;
   color: #000;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .offer-info p {
   font-size: 18px;
+  font-weight: bold;
   margin-bottom: 15px;
   color: #000;
 }
 
 /* Секция обратного отсчёта */
 .countdown {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 40px;
   display: inline-block;
   color: #000;
   margin-bottom: 10px;
@@ -305,11 +305,19 @@ button:hover {
 @media (max-width: 1024px) {
   .special-offer-section {
     margin-top: -620px;
+    .offer-image {
+        position: relative;
+      top: 10px;
+      }
   }
 }
 @media (max-width: 768px) {
   .special-offer-section {
     margin-top: -550px;
+  }
+  .offer-image {
+    position: relative;
+  top: 10px;
   }
   .offer-info h2 {
     font-size: 24px;
@@ -355,4 +363,3 @@ button:hover {
     font-size: 16px;
   }
 }
-  
