@@ -82,8 +82,7 @@ body {
   cursor: pointer;
 }
 .phone span:hover {
-    color: rgb(255, 168, 7);
-
+  color: rgb(255, 168, 7);
 }
 h2 {
   font-size: 24px;
@@ -95,7 +94,7 @@ h2 {
   font-weight: bold;
 }
 .price span {
-    background-color: rgb(255, 168, 7);
+  background-color: rgb(255, 168, 7);
 }
 .installment {
   font-size: 16px;
@@ -112,8 +111,8 @@ button {
   transition: 0.4s;
 }
 button:hover {
-    background-color: #0098e4;
-    color: rgb(240, 240, 240);
+  background-color: #0098e4;
+  color: rgb(240, 240, 240);
 }
 @media (min-width: 1025px) {
   .container {
@@ -194,3 +193,156 @@ button:hover {
     width: 100px;
   }
 }
+
+.special-offer-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: -150px;
+  }
+
+  /* Верхний блок: фото + текст + обратный отсчёт */
+  .offer-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .offer-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .offer-info {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .offer-info h2 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .offer-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+
+  /* Секция обратного отсчёта */
+  .countdown {
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+    color: #000;
+    margin-bottom: 10px;
+  }
+
+  .units {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    max-width: 220px;
+    margin: 5px auto 0;
+  }
+
+  /* Нижний блок с формой */
+  .offer-bottom {
+    background-color: #00a2e8; /* Ярко-синий блок */
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .offer-bottom h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .offer-bottom form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .offer-bottom input {
+    flex: 1;
+    min-width: 150px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .offer-bottom button {
+    background-color: #fcb914; /* Оранжевая кнопка */
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    min-width: 180px;
+  }
+  .offer-bottom button:hover {
+    background-color: #ffa500;
+  }
+
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .offer-info h2 {
+      font-size: 24px;
+    }
+    .offer-info p {
+      font-size: 16px;
+    }
+    .countdown {
+      font-size: 24px;
+    }
+    .units {
+      font-size: 12px;
+    }
+    .offer-bottom h3 {
+      font-size: 18px;
+    }
+    .offer-bottom input, .offer-bottom button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .offer-top {
+      padding: 10px;
+    }
+    .offer-info {
+      margin: 10px 0;
+    }
+    .offer-info h2 {
+      font-size: 20px;
+    }
+    .offer-info p {
+      font-size: 14px;
+    }
+    .countdown {
+      font-size: 20px;
+    }
+    .units {
+      font-size: 12px;
+    }
+    .offer-bottom h3 {
+      font-size: 16px;
+    }
+  }
