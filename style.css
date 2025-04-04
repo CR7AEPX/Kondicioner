@@ -302,7 +302,15 @@ button:hover {
   }
 
   /* Адаптивность */
+  @media (max-width: 1024px) {
+    .special-offer-section {
+        margin-top: -760px;
+      }
+  }
   @media (max-width: 768px) {
+    .special-offer-section {
+        margin-top: -1050px;
+      }
     .offer-info h2 {
       font-size: 24px;
     }
