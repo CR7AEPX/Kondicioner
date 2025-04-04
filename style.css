@@ -382,6 +382,7 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 100px;
+    margin-top: -30px;
 }
 
 .logos img {
@@ -389,14 +390,47 @@ button:hover {
     max-width: 100%;
 }
 
+.logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opisaniya {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: -60px;
+    width: 100%;
+}
+
+.opisaniya p {
+    font-size: 17px;
+    text-align: center;
+    width: 20%;
+}
+
 @media (max-width: 1024px) {
     .logos {
         gap: 50px;
     }
+
     .logos img {
         width: 25%;
     }
+
+    .opisaniya {
+        gap: 50px;
+    }
+
+    .opisaniya p {
+        width: 25%;
+        font-size: 16px;
+    }
 }
+
 @media (max-width: 768px) {
     .logos {
         gap: 20px;
@@ -405,12 +439,32 @@ button:hover {
     .logos img {
         width: 30%;
     }
+
+    .opisaniya {
+        gap: 20px;
+    }
+
+    .opisaniya p {
+        width: 30%;
+        font-size: 14px;
+    }
 }
+
 @media (max-width: 480px) {
     .logos {
         gap: 10px;
     }
+
     .logos img {
         width: 28%;
+    }
+
+    .opisaniya {
+        gap: 10px;
+    }
+
+    .opisaniya p {
+        width: 28%;
+        font-size: 12px;
     }
 }
