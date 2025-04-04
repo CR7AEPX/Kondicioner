@@ -565,9 +565,9 @@ button:hover {
 }
 
 @media (max-width: 480px) {
-    .cards-container {
-        gap: 20px;
-    }
+  .cards-container {
+    gap: 20px;
+  }
   .card {
     width: 88%;
   }
@@ -584,5 +584,49 @@ button:hover {
   .buy-button {
     font-size: 13px;
     padding: 14px;
+  }
+}
+.montazh h2 {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.montazh .predlozhenie {
+  margin-left: 210px;
+  margin-top: 35px;
+}
+
+.montazh .ustanovka {
+  margin-left: 210px;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.ustanovka p {
+  margin-bottom: 5px;
+}
+
+.montazh img {
+  width: 1100px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .montazh .predlozhenie,
+  .montazh .ustanovka {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13px;
+  }
+
+  .montazh h2 {
+    margin-top: 30px;
+    font-size: 20px;
   }
 }
