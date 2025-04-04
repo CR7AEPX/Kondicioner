@@ -304,12 +304,13 @@ button:hover {
 /* Адаптивность */
 @media (max-width: 1024px) {
   .special-offer-section {
-    margin-top: -620px;}
-    .offer-image {
-        position: relative;
-      top: 10px;
-      max-width: 400px;
-      }
+    margin-top: -620px;
+  }
+  .offer-image {
+    position: relative;
+    top: 10px;
+    max-width: 400px;
+  }
   .offer-info h2 {
     margin-bottom: 10px;
   }
@@ -320,8 +321,8 @@ button:hover {
   }
   .offer-image {
     position: relative;
-  top: 10px;
-  max-width: 280px;
+    top: 10px;
+    max-width: 280px;
   }
   .offer-info h2 {
     font-size: 24px;
@@ -348,7 +349,7 @@ button:hover {
   .offer-image {
     position: relative;
     top: 0px;
-    }
+  }
   .offer-top {
     padding: 10px;
   }
@@ -373,98 +374,212 @@ button:hover {
   }
 }
 .brends h2 {
-    font-weight: 600;
-    text-align: center;
-    margin-top: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .logos {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: -30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: -30px;
 }
 
 .logos img {
-    width: 20%;
-    max-width: 100%;
+  width: 20%;
+  max-width: 100%;
 }
 
 .logos-container {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .opisaniya {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: -60px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: -60px;
+  width: 100%;
 }
 
 .opisaniya p {
-    font-size: 17px;
-    text-align: center;
-    width: 20%;
+  font-size: 17px;
+  text-align: center;
+  width: 20%;
 }
 
 @media (max-width: 1024px) {
-    .logos {
-        gap: 50px;
-    }
+  .logos {
+    gap: 50px;
+  }
 
-    .logos img {
-        width: 25%;
-    }
+  .logos img {
+    width: 25%;
+  }
 
-    .opisaniya {
-        gap: 50px;
-    }
+  .opisaniya {
+    gap: 50px;
+  }
 
-    .opisaniya p {
-        width: 25%;
-        font-size: 16px;
-    }
+  .opisaniya p {
+    width: 25%;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 768px) {
-    .logos {
-        gap: 20px;
-    }
+  .logos {
+    gap: 20px;
+  }
 
-    .logos img {
-        width: 30%;
-    }
-
-    .opisaniya {
-        gap: 20px;
-    }
-
-    .opisaniya p {
-        width: 30%;
-        font-size: 14px;
-    }
+  .logos img {
+    width: 30%;
+  }
+  .opisaniya p {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-    .logos {
-        gap: 10px;
-    }
+  .logos {
+    gap: 10px;
+  }
 
-    .logos img {
-        width: 28%;
-    }
+  .logos img {
+    width: 28%;
+  }
+  .opisaniya p {
+    display: none;
+  }
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 60px;
+  justify-content: center;
+}
 
-    .opisaniya {
-        gap: 10px;
-    }
+.card {
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .opisaniya p {
-        width: 28%;
-        font-size: 12px;
-    }
+.ac-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #151515;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.old-price {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.old-price-value {
+  margin-right: 8px;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #ff6400;
+}
+.discount {
+  color: white;
+  font-weight: bold;
+  background-color: #ff6400;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 5px;
+  padding: 2px 2px;
+}
+
+.new-price {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.new-price .rub {
+  font-size: 16px;
+}
+
+.buy-button {
+  background-color: #ff6400;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.buy-button:hover {
+  background-color: #ff8533;
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+
+  .card h3 {
+    font-size: 14px;
+  }
+  .subtitle,
+  .description {
+    font-size: 12px;
+  }
+  .new-price {
+    font-size: 20px;
+  }
+  .buy-button {
+    font-size: 13px;
+    padding: 10px;
+  }
 }
