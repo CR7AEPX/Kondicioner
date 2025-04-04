@@ -304,11 +304,14 @@ button:hover {
 /* Адаптивность */
 @media (max-width: 1024px) {
   .special-offer-section {
-    margin-top: -620px;
+    margin-top: -620px;}
     .offer-image {
         position: relative;
       top: 10px;
+      max-width: 400px;
       }
+  .offer-info h2 {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -318,6 +321,7 @@ button:hover {
   .offer-image {
     position: relative;
   top: 10px;
+  max-width: 400px;
   }
   .offer-info h2 {
     font-size: 24px;
@@ -349,6 +353,7 @@ button:hover {
   }
   .offer-info h2 {
     font-size: 20px;
+    margin-bottom: 10px;
   }
   .offer-info p {
     font-size: 14px;
