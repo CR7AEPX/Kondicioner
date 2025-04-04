@@ -162,7 +162,7 @@ button {
 
 @media (max-width: 480px) {
   .right {
-    height: 200px;
+    height: 220px;
   }
   .left img,
   .right .background {
