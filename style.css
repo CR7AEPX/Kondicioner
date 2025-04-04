@@ -160,7 +160,6 @@ button {
   }
 }
 
-/* Для телефонов (до 480px) - уменьшаем шрифты и отступы */
 @media (max-width: 480px) {
   .right {
     height: 200px;
@@ -174,17 +173,17 @@ button {
     padding: 5px;
   }
   h2 {
-    font-size: 18px;
-  }
-  .price {
     font-size: 16px;
   }
+  .price {
+    font-size: 12px;
+  }
   .installment {
-    font-size: 14px;
+    font-size: 12px;
   }
   button {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 13px;
+    padding: 7px 14px;
   }
   .logo {
     width: 100px;
