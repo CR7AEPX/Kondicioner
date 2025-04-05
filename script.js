@@ -1,5 +1,4 @@
 let totalSeconds = 6 * 3600 + 14 * 60 + 49;
-
 function updateCountdown() {
   if (totalSeconds <= 0) {
     document.getElementById("hours").textContent = "00";
@@ -22,6 +21,21 @@ function updateCountdown() {
 
   totalSeconds--;
 }
-
 updateCountdown();
 setInterval(updateCountdown, 1000);
+const sliderTrack = document.querySelector(".slider-track");
+if (sliderTrack) {
+  const slides = sliderTrack.querySelectorAll("img");
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  function updateSlider() {
+    sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlider();
+  }
+  setInterval(nextSlide, 3000);
+}
