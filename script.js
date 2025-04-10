@@ -60,19 +60,20 @@
   }
   })()
   const faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(item => {
-    const answer = item.querySelector('.faq-answer');
-
-    item.addEventListener('click', () => {
-      const isOpen = item.classList.contains('active');
-
-      faqItems.forEach(el => {
-        el.classList.remove('active');
-        el.querySelector('.faq-answer').style.maxHeight = null;
-      });
-      if (!isOpen) {
-        item.classList.add('active');
-        answer.style.maxHeight = answer.scrollHeight + 'px';
+    faqItems.forEach(item => {
+      const answer = item.querySelector('.faq-answer');
+      function toggleFAQ(e) {
+        e.preventDefault();
+        const isOpen = item.classList.contains('active');
+        faqItems.forEach(el => {
+          el.classList.remove('active');
+          el.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
       }
+      item.addEventListener('click', toggleFAQ);
+      item.addEventListener('touchend', toggleFAQ);
     });
-  });
