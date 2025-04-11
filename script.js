@@ -23,23 +23,50 @@
   }
   updateCountdown();
   setInterval(updateCountdown, 1000);
-  const sliderTrack = document.querySelector(".slider-track");
-  if (sliderTrack) {
-    const slides = sliderTrack.querySelectorAll("img");
-    let currentIndex = 0;
-    const totalSlides = slides.length;
+  const track = document.getElementById('sliderTrack');
+    const prevBtn = document.querySelector('.slider-btn.prev');
+    const nextBtn = document.querySelector('.slider-btn.next');
 
-    function updateSlider() {
-      sliderTrack.style.transform = `translateX(-${currentIndex * 100}%)`;
+    let currentIndex = 0;
+    let slidesToShow = window.innerWidth <= 600 ? 1 : 3;
+    let totalSlides = document.querySelectorAll('.slide').length;
+
+    const updateSliderWidth = () => {
+      slidesToShow = window.innerWidth <= 600 ? 1 : 3;
+      moveTo(currentIndex);
+    };
+
+    function moveTo(index) {
+      const slide = document.querySelector('.slide');
+      const slideStyle = getComputedStyle(slide);
+      const slideWidth = slide.offsetWidth + parseFloat(slideStyle.marginLeft) + parseFloat(slideStyle.marginRight);
+      track.style.transform = `translateX(-${index * slideWidth}px)`;
     }
 
     function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      updateSlider();
+      currentIndex++;
+      if (currentIndex > totalSlides - slidesToShow) {
+        currentIndex = 0;
+      }
+      moveTo(currentIndex);
     }
-    setInterval(nextSlide, 3000);
-  }
 
+    function prevSlide() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = totalSlides - slidesToShow;
+      }
+      moveTo(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', prevSlide);
+    nextBtn.addEventListener('click', nextSlide);
+    window.addEventListener('resize', updateSliderWidth);
+    window.addEventListener('load', updateSliderWidth);
+
+    let auto = setInterval(nextSlide, 4000);
+    document.querySelector('.slider-wrapper').addEventListener('mouseenter', () => clearInterval(auto));
+    document.querySelector('.slider-wrapper').addEventListener('mouseleave', () => auto = setInterval(nextSlide, 4000));
   (function (){
     var myReviewsInit = function () {
       new window.myReviews.BlockWidget({
@@ -75,4 +102,5 @@
         }
       }
       item.addEventListener('click', toggleFAQ);
+      item.addEventListener('touchend', toggleFAQ);
     });
