@@ -667,42 +667,62 @@ button:hover {
   text-align: center;
   margin-top: 60px;
 }
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 20px;
-  max-width: 1350px;
-  margin: auto;
-  margin-top: 30px;
-}
-.photo-grid img {
-  width: 100%;
-  border-radius: 5px;
-  display: block;
-  transition: 0.6s all;
-  cursor: pointer;
-}
-.photo-grid img:hover {
-  transform: scale(1.05);
-}
-.photo-slider {
-  display: none;
+.slider-wrapper {
+  max-width: 1200px;
+  margin: 40px auto;
   position: relative;
+  padding: 0 60px;
+}
+.slider-container {
   overflow: hidden;
-  max-width: 88%;
-  margin: auto;
-  margin-top: 30px;
+  width: 100%;
 }
 .slider-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
-.slider-track img {
+.slide {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.slide img {
   width: 100%;
-  flex-shrink: 0;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 8px;
   display: block;
+  object-fit: cover;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #00aefb;
+  cursor: pointer;
+  z-index: 5;
+  user-select: none;
+}
+.slider-btn:hover {
+  background: none;
+  color: #0099db;
+}
+.slider-btn.prev {
+  left: 10px;
+}
+.slider-btn.next {
+  right: 10px;
+}
+@media (max-width: 600px) {
+  .slide {
+    flex: 0 0 100%;
+  }
+
+  .slider-wrapper {
+    padding: 0 40px;
+  }
 }
 @media (max-width: 600px) {
   .photo-grid { display: none; }
@@ -722,6 +742,7 @@ button:hover {
   margin: 0 auto;
 }
 .team-section h2 {
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 .team-cards {
@@ -777,6 +798,10 @@ button:hover {
 }
 .faq-home {
   padding: 0 20px;
+}
+.faq-home h2 {
+  text-align: center;
+  margin-top: 50px;
 }
 .faq-container {
   max-width: 1000px;
