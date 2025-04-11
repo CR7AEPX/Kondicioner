@@ -102,5 +102,4 @@
         }
       }
       item.addEventListener('click', toggleFAQ);
-      item.addEventListener('touchend', toggleFAQ);
     });
