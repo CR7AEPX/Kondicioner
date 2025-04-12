@@ -1,312 +1,457 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кондиционер</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Климат-Системы — кондиционеры и вентиляция | Проектирование, монтаж,
+      сервис
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="left">
-            <img src="montagnik.jpg" alt="Мастер устанавливает кондиционер">
+      <div class="left">
+        <img
+          src="montagnik.jpg"
+          alt="Мастер устанавливает кондиционер"
+        />
+      </div>
+      <div class="right">
+        <img
+          class="background"
+          src="kvartira.jpg"
+          alt="Гостиная с кондиционером"
+        />
+        <div class="header">
+          <img class="logo" src="logo CS_white_2.png" alt="Логотип" />
+          <p class="phone">
+            +7 (952) 770-08-83<br /><span>Позвоните мне</span>
+          </p>
         </div>
-        <div class="right">
-            <img class="background" src="kvartira.jpg" alt="Гостиная с кондиционером">
-            <div class="header">
-                <img class="logo" src="logo CS_white_2.png" alt="Логотип">
-                <p class="phone">+7 (952) 770-08-83<br><span>Позвоните мне</span></p>
-            </div>
-            <div class="content">
-                <h2>КОНДИЦИОНЕР С УСТАНОВКОЙ</h2>
-                <p class="price">ЗА <span>35 490 РУБ</span> ПОД КЛЮЧ</p>
-                <p class="installment">РАССРОЧКА НА 3 МЕСЯЦА БЕЗ ПЕРЕПЛАТ</p>
-                <button>КУПИТЬ СО СКИДКОЙ</button>
-            </div>
+        <div class="content">
+          <h2>КОНДИЦИОНЕР С УСТАНОВКОЙ</h2>
+          <p class="price">ЗА <span>35 490 РУБ</span> ПОД КЛЮЧ</p>
+          <p class="installment">РАССРОЧКА НА 3 МЕСЯЦА БЕЗ ПЕРЕПЛАТ</p>
+          <button>КУПИТЬ СО СКИДКОЙ</button>
         </div>
+      </div>
     </div>
     <div class="special-offer-section">
-        <div class="offer-top">
-          <img src="Girl.png" alt="Специальное предложение" class="offer-image" />
-          <div class="offer-info">
-            <h2>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!!!</h2>
-            <p>ТОРОПИТЕСЬ! <br> ПРЕДЛОЖЕНИЕ ОГРАНИЧЕНО!</p>
-            <div class="countdown">
-              <span id="hours">06</span>:
-              <span id="minutes">14</span>:
-              <span id="seconds">49</span>
-              <div class="units">
-                <span>часов</span>
-                <span>минут</span>
-                <span>секунд</span>
-              </div>
+      <div class="offer-top">
+        <img
+          src="Girl.png"
+          alt="Специальное предложение"
+          class="offer-image"
+        />
+        <div class="offer-info">
+          <h2>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!!!</h2>
+          <p>
+            ТОРОПИТЕСЬ! <br />
+            ПРЕДЛОЖЕНИЕ ОГРАНИЧЕНО!
+          </p>
+          <div class="countdown">
+            <span id="hours">06</span>: <span id="minutes">14</span>:
+            <span id="seconds">49</span>
+            <div class="units">
+              <span>часов</span>
+              <span>минут</span>
+              <span>секунд</span>
             </div>
           </div>
         </div>
-            <div class="offer-bottom">
-          <h3>ЗАПОЛНИТЕ ФОРМУ, чтобы получить кондиционер по специальному предложению</h3>
-          <form>
-            <input type="text" name="name" placeholder="Ваше имя" required />
-            <input type="tel" name="phone" placeholder="Телефон" required />
-            <button type="submit">Получить предложение</button>
-          </form>
-        </div>
       </div>
-      <div class="brends">
-        <h2>НЕСКОЛЬКО БРЕНДОВ В ОДНОЙ АКЦИИ</h2>
-        <div class="logos">
-        <img src="logo_ultima_comfort1400х1400.png" alt="Логотип Ультима комфорт">
-        <img src="logo_axioma_1400х1400.png" alt="Логотип Аксиома">
-        <img src="logo_berlingtoun_1400х1400.png" alt="Логотип Берлингтон">
-        </div>
-            <div class="opisaniya">
-                <p>Инновационные технологии,<br>бесшумная работа,<br>энергоэффективность</p>
-                <p>Стильный дизайн, надежность,<br>простое управление</p>
-                <p>Мощность и долговечность для<br>больших помещений</p>
-            </div>
+      <div class="offer-bottom">
+        <h3>
+          ЗАПОЛНИТЕ ФОРМУ, чтобы получить кондиционер по специальному
+          предложению
+        </h3>
+        <form>
+          <input type="text" name="name" placeholder="Ваше имя" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <button type="submit">Получить предложение</button>
+        </form>
       </div>
-      <div class="cards-container">
-        <div class="card">
-          <img src="Кондиционер_Ultima Comfort.png" alt="Кондиционер Ultima Comfort" class="ac-image" />
-          <h3>Настенный кондиционер<br>Ultima Comfort IMP-07PN</h3>
-          <p class="subtitle">Рекомендуемая площадь, кв.м. — до 22 м²</p>
-          <p class="description">Установка входит в стоимость<br>Гарантия 3 года</p>
-          <div class="old-price">
-            <span class="old-price-value">58 576 руб.</span>
-            <span class="discount">- 40%</span>
-          </div>
-          <div class="new-price">35 490 <span class="rub">₽</span></div>
-          <button class="buy-button">КУПИТЬ ПО АКЦИИ</button>
-        </div>
-        <div class="card">
-          <img src="Кондиционер_Axioma.png" alt="Кондиционер Axioma" class="ac-image" />
-          <h3>Настенный кондиционер<br>Axioma ASX07H1/ASB07H1</h3>
-          <p class="subtitle">Рекомендуемая площадь, кв.м. – до 20 м²</p>
-          <p class="description">Установка входит в стоимость<br>Гарантия 3 года</p>
-          <div class="old-price">
-            <span class="old-price-value">58 576 руб.</span>
-            <span class="discount">- 40%</span>
-          </div>
-          <div class="new-price">35 490 <span class="rub">₽</span></div>
-          <button class="buy-button">КУПИТЬ ПО АКЦИИ</button>
-        </div>
-        <div class="card">
-          <img src="Кондиционер Berlingtoun.png" alt="Кондиционер Berlingtoun" class="ac-image" />
-          <h3>Настенный кондиционер<br>Berlington BR-07MBST1</h3>
-          <p class="subtitle">Рекомендуемая площадь, кв.м. – до 20 м²</p>
-          <p class="description">Установка входит в стоимость<br>Гарантия 3 года</p>
-          <div class="old-price">
-            <span class="old-price-value">58 576 руб.</span>
-            <span class="discount">- 40%</span>
-          </div>
-          <div class="new-price">35 490 <span class="rub">₽</span></div>
-          <button class="buy-button">КУПИТЬ ПО АКЦИИ</button>
-        </div>
+    </div>
+    <div class="brends">
+      <h2>НЕСКОЛЬКО БРЕНДОВ В ОДНОЙ АКЦИИ</h2>
+      <div class="logos">
+        <img
+          src="logo_ultima_comfort1400х1400.png"
+          alt="Логотип Ультима комфорт"
+        />
+        <img src="logo_axioma_1400х1400.png" alt="Логотип Аксиома" />
+        <img
+          src="logo_berlingtoun_1400х1400.png"
+          alt="Логотип Берлингтон"
+        />
       </div>
-      <div class="montazh">
-        <h2>ЧТО ВХОДИТ В МОНТАЖ ПО АКЦИИ</h2>
-        <p class="predlozhenie">В наше специальное предложение входит монтаж, который состоит из:</p>
-        <div class="ustanovka">
+      <div class="opisaniya">
+        <p>
+          Инновационные технологии,<br />бесшумная работа,<br />энергоэффективность
+        </p>
+        <p>Стильный дизайн, надежность,<br />простое управление</p>
+        <p>Мощность и долговечность для<br />больших помещений</p>
+      </div>
+    </div>
+    <div class="cards-container">
+      <div class="card">
+        <img
+          src="Кондиционер_Ultima Comfort.png"
+          alt="Кондиционер Ultima Comfort"
+          class="ac-image"
+        />
+        <h3>Настенный кондиционер<br />Ultima Comfort IMP-07PN</h3>
+        <p class="subtitle">Рекомендуемая площадь, кв.м. — до 22 м²</p>
+        <p class="description">
+          Установка входит в стоимость<br />Гарантия 3 года
+        </p>
+        <div class="old-price">
+          <span class="old-price-value">58 576 руб.</span>
+          <span class="discount">- 40%</span>
+        </div>
+        <div class="new-price">35 490 <span class="rub">₽</span></div>
+        <button class="buy-button">КУПИТЬ ПО АКЦИИ</button>
+      </div>
+      <div class="card">
+        <img
+          src="Кондиционер_Axioma.png"
+          alt="Кондиционер Axioma"
+          class="ac-image"
+        />
+        <h3>Настенный кондиционер<br />Axioma ASX07H1/ASB07H1</h3>
+        <p class="subtitle">Рекомендуемая площадь, кв.м. – до 20 м²</p>
+        <p class="description">
+          Установка входит в стоимость<br />Гарантия 3 года
+        </p>
+        <div class="old-price">
+          <span class="old-price-value">58 576 руб.</span>
+          <span class="discount">- 40%</span>
+        </div>
+        <div class="new-price">35 490 <span class="rub">₽</span></div>
+        <button class="buy-button">КУПИТЬ ПО АКЦИИ</button>
+      </div>
+      <div class="card">
+        <img
+          src="Кондиционер Berlingtoun.png"
+          alt="Кондиционер Berlingtoun"
+          class="ac-image"
+        />
+        <h3>Настенный кондиционер<br />Berlington BR-07MBST1</h3>
+        <p class="subtitle">Рекомендуемая площадь, кв.м. – до 20 м²</p>
+        <p class="description">
+          Установка входит в стоимость<br />Гарантия 3 года
+        </p>
+        <div class="old-price">
+          <span class="old-price-value">58 576 руб.</span>
+          <span class="discount">- 40%</span>
+        </div>
+        <div class="new-price">35 490 <span class="rub">₽</span></div>
+        <button class="buy-button">КУПИТЬ ПО АКЦИИ</button>
+      </div>
+    </div>
+    <div class="montazh">
+      <h2>ЧТО ВХОДИТ В МОНТАЖ ПО АКЦИИ</h2>
+      <p class="predlozhenie">
+        В наше специальное предложение входит монтаж, который состоит из:
+      </p>
+      <div class="ustanovka">
         <p>· Установки внутреннего блока кондиционера</p>
 
         <p>· Установки внешнего блока под окно (Без привлечения альпиниста)</p>
-            
-        <p>· Трассы длиной не более 4 метров (межблочная трасса со стороны улицы идет в открытую не
-            заматывается и не декорируется в цвет фасада)</p>
-            
+
+        <p>
+          · Трассы длиной не более 4 метров (межблочная трасса со стороны улицы
+          идет в открытую не заматывается и не декорируется в цвет фасада)
+        </p>
+
         <p>· Одного отверстие в наружной стене для коммуникаций 40-45 мм</p>
-            
+
         <p>· Прокладки межблочной трассы из медных трубок длинной до 4 м</p>
-            
+
         <p>· Термоизоляции коммуникаций длинной до 4 м</p>
-            
+
         <p>· Настенных кронштейнов для крепления внешнего блока</p>
-            
-        <p>· Декоративного короба для скрытия коммуникаций внутри помещения длинной до 1 м</p>
-            
+
+        <p>
+          · Декоративного короба для скрытия коммуникаций внутри помещения
+          длинной до 1 м
+        </p>
+
         <p>· Дренажа для отвода конденсата на улицу длинной до 5 м</p>
-            
+
         <p>· Электрической вилки на штатный кабель</p>
-            
+
         <p>· Вакуумирования трассы (удаление влаги и воздуха)</p>
-            
+
         <p>· Запуска кондиционера и проверка его во всех режимах</p>
+      </div>
+      <img src="montazh-block.jpg" alt="Монтажный блок" />
     </div>
-    <img src="montazh-block.jpg" alt="Монтажный блок">
-      </div>
-        <div class="form-container">
-          <h3>ЗАПОЛНИТЕ ФОРМУ, чтобы получить бесплатную консультацию нашего специалиста</h3>
-          <form>
-              <input type="text" placeholder="Введите Ваше имя">
-              <input type="text" placeholder="Введите телефон">
-              <input type="text" placeholder="Введите e-mail">
-              <button type="submit">Получить консультацию</button>
-          </form>
-      </div>
-      <div class="why-us">
-        <h2>ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
-        <div class="blocks">
+    <div class="form-container">
+      <h3>
+        ЗАПОЛНИТЕ ФОРМУ, чтобы получить бесплатную консультацию нашего
+        специалиста
+      </h3>
+      <form>
+        <input type="text" placeholder="Введите Ваше имя" />
+        <input type="text" placeholder="Введите телефон" />
+        <input type="text" placeholder="Введите e-mail" />
+        <button type="submit">Получить консультацию</button>
+      </form>
+    </div>
+    <div class="why-us">
+      <h2>ПОЧЕМУ ВЫБИРАЮТ НАС?</h2>
+      <div class="blocks">
         <div class="block">
-          <img src="png.png" alt="">
-          <p>ОПЫТ РАБОТЫ<br>
-          С 2017 ГОДУ</p>
+          <img src="png.png" alt="" />
+          <p>
+            ОПЫТ РАБОТЫ<br />
+            С 2017 ГОДА
+          </p>
         </div>
         <div class="block">
-          <img src="png4.png" alt="">
-          <p>ДОГОВОР И АКТ<br>
-          В 2-Х ЭКЗЕМПЛЯРАХ</p>
+          <img src="png4.png" alt="" />
+          <p>
+            ДОГОВОР И АКТ<br />
+            В 2-Х ЭКЗЕМПЛЯРАХ
+          </p>
         </div>
         <div class="block">
-          <img src="png3.png" alt="">
-          <p>ГАРАНТИЯ<br>
-          ОТ 3-Х ЛЕТ</p>
+          <img src="png3.png" alt="" />
+          <p>
+            ГАРАНТИЯ<br />
+            ОТ 3-Х ЛЕТ
+          </p>
         </div>
         <div class="block">
-          <img src="Technical_maintenance_of_conditioners-04-1024.png" alt="">
-          <p>МОНТАЖ<br>
-          ЗА 1 ДЕНЬ</p>
+          <img
+            src="Technical_maintenance_of_conditioners-04-1024.png"
+            alt=""
+          />
+          <p>
+            МОНТАЖ<br />
+            ЗА 1 ДЕНЬ
+          </p>
         </div>
       </div>
-      </div>
-      <div class="primer">
-        <h2>ПРИМЕРЫ НАШИХ РАБОТ</h2>
-        <div class="slider-wrapper">
-          <button class="slider-btn prev">&#10094;</button>
-          <div class="slider-container">
-            <div class="slider-track" id="sliderTrack">
-              <div class="slide"><img src="Примеры работ.png" alt=""></div>
-              <div class="slide"><img src="Примеры работ_2.png" alt=""></div>
-              <div class="slide"><img src="Примеры работ_3.png" alt=""></div>
-              <div class="slide"><img src="Примеры работ_5.png" alt=""></div>
-              <div class="slide"><img src="Примеры работ_4.png" alt=""></div>
+    </div>
+    <div class="primer">
+      <h2>ПРИМЕРЫ НАШИХ РАБОТ</h2>
+      <div class="slider-wrapper">
+        <button class="slider-btn prev">&#10094;</button>
+        <div class="slider-container">
+          <div class="slider-track" id="sliderTrack">
+            <div class="slide">
+              <img src="Примеры работ.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="Примеры работ_2.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="Примеры работ_3.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="Примеры работ_5.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="Примеры работ_4.png" alt="" />
             </div>
           </div>
-          <button class="slider-btn next">&#10095;</button>
-        </div>  
         </div>
-        <div class="otziv">
-          <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
-          <div style="display: flex; justify-content: center;margin-top: 20px;border-radius: 20px;">
-            <iframe style="width: 100%; height: 100%; max-width: 1170px; border: none; outline: none; padding: 0; margin: 0" id="myReviews__block-widget">
-            </iframe>
-        </div>    
-        <script src="https://myreviews.dev/widget/dist/index.js" defer></script>
-        </div>
-        <section class="team-section">
-          <div class="team-wrapper">
-            <h2>НАША КОМАНДА</h2>
-            <div class="team-cards">
-              <div class="team-card">
-                <img src="Mihail_960x960.jpg" alt="Михаил Решетов">
-                <h3>Михаил Решетов</h3>
-                <p class="position">Генеральный директор</p>
-                <p class="phone">+7 (920) 251-31-33</p>
-              </div>
-              <div class="team-card">
-                <img src="Aleksei_960x960.jpg" alt="Алексей Перминов">
-                <h3>Алексей Перминов</h3>
-                <p class="position">Исполнительный директор</p>
-                <p class="phone">+7 (952) 770-08-83</p>
-              </div>
-              <div class="team-card">
-                <img src="Karen_A_960x960.jpg" alt="Карен Анташан">
-                <h3>Карен Анташан</h3>
-                <p class="position">Старший менеджер по продажам</p>
-                <p class="phone">+7 (920) 071-77-88</p>
-              </div>
-              <div class="team-card">
-                <img src="Darya_S_960x960.jpg" alt="Дарья Ситова">
-                <h3>Дарья Ситова</h3>
-                <p class="position">Менеджер по продажам</p>
-                <p class="phone">+7 (920) 253-35-33</p>
-              </div>
-            </div>
+        <button class="slider-btn next">&#10095;</button>
+      </div>
+    </div>
+    <div class="otziv">
+      <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+          border-radius: 20px;
+        "
+      >
+        <iframe
+          style="
+            width: 100%;
+            height: 100%;
+            max-width: 1170px;
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+          "
+          id="myReviews__block-widget"
+        >
+        </iframe>
+      </div>
+      <script src="https://myreviews.dev/widget/dist/index.js" defer></script>
+    </div>
+    <section class="team-section">
+      <div class="team-wrapper">
+        <h2>НАША КОМАНДА</h2>
+        <div class="team-cards">
+          <div class="team-card">
+            <img
+              src="Mihail_960x960.jpg"
+              alt="Михаил Решетов"
+            />
+            <h3>Михаил Решетов</h3>
+            <p class="position">Генеральный директор</p>
+            <p class="phone">+7 (920) 251-31-33</p>
           </div>
-        </section>
-        <div class="faq-home">
-        <h2>У нас часто спрашивают</h2>
-  <div class="faq-container">
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Какой кондиционер выбрать: классический или инверторный?</span>
-        <span class="faq-plus">+</span>
+          <div class="team-card">
+            <img
+              src="Aleksei_960x960.jpg"
+              alt="Алексей Перминов"
+            />
+            <h3>Алексей Перминов</h3>
+            <p class="position">Исполнительный директор</p>
+            <p class="phone">+7 (952) 770-08-83</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="Karen_A_960x960.jpg"
+              alt="Карен Анташан"
+            />
+            <h3>Карен Анташан</h3>
+            <p class="position">Старший менеджер по продажам</p>
+            <p class="phone">+7 (920) 071-77-88</p>
+          </div>
+          <div class="team-card">
+            <img
+              src="Darya_S_960x960.jpg"
+              alt="Дарья Ситова"
+            />
+            <h3>Дарья Ситова</h3>
+            <p class="position">Менеджер по продажам</p>
+            <p class="phone">+7 (920) 253-35-33</p>
+          </div>
+        </div>
       </div>
-      <div class="faq-answer">
-        В зависимости от запроса и помещения.<br><br>
-        Классический кондиционер дешевле, но шумнее.<br><br>
-        Инверторный - тихий, более безопасный (лучше контролирует температуру), имеет подключение по wi-fi, регулирование режима работы. А также сможете настроить кондиционер под себя.
-    </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Как устроена оплата ваших услуг?</span>
-        <span class="faq-plus">+</span>
+    </section>
+    <div class="faq-home">
+      <h2>У нас часто спрашивают</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span
+              >Какой кондиционер выбрать: классический или инверторный?</span
+            >
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            В зависимости от запроса и помещения.<br /><br />
+            Классический кондиционер дешевле, но шумнее.<br /><br />
+            Инверторный - тихий, более безопасный (лучше контролирует
+            температуру), имеет подключение по wi-fi, регулирование режима
+            работы. А также сможете настроить кондиционер под себя.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Как устроена оплата ваших услуг?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            Оплата только после установки, запуска и проверки кондиционера.
+            Наличными или переводом.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Работаете ли вы по договору?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            Да, мы работаем официально по договору с юр. и физ. лицами.<br /><br />
+            Фиксируем цены и наши гарантийные обязательства.<br />
+            Так же с юр. лицами всех форм налогооблажения.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Можете сделать срочный монтаж?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            Да, можем. Сделаем в течение 3х дней после заявки. Цена срочного
+            монтажа в 2 раза больше цены стандартного.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Как часто нужно обслуживать кондиционер?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            В руководстве по эксплуатации рекомндуется обслуживать кондиционер
+            раз в год, рекомендуем обращаться после сентября, чтобы получить
+            услугу по лучшей цене и максимально оперативно.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Сколько времени займет установка кондиционера?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            В зависимости от сложности, стандартный монтаж занимает от 1.5 до 3
+            часов.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Что делать при гарантийной поломке?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            Заводские браки и ошибки монтажа решаем за свой счет.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>В каких сегментах вы работаете?</span>
+            <span class="faq-plus">+</span>
+          </div>
+          <div class="faq-answer">
+            Доступный (Бюджетный вариант, гарантия - 3 года)<br /><br />
+            Средний класс (Вариант с расширенным функционалом, гарантия - 3
+            года)<br /><br />
+            Бизнес класс (Комфортный, тихий, качественный, надежный вариант от
+            мировых лидеров в сфере клим. оборудования. Гарантия - 5 лет)<br /><br />
+            Премиум класс (Передовой высокотехнологичный вариант. Гарантия - 7
+            лет)
+          </div>
+        </div>
       </div>
-      <div class="faq-answer">
-        Оплата только после установки, запуска и проверки кондиционера. Наличными или переводом.
     </div>
+    <div class="map-container">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1e26dfde22fc1554d2b6e13b2b4f217779e024d12bdeed1d34b2792498c01fba&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Работаете ли вы по договору?</span>
-        <span class="faq-plus">+</span>
+    <div class="footer-wrapper">
+      <div class="footer">
+        <div class="footer-column footer-left">
+          <img src="logo CS_blue_2.png" alt="Логотип" />
+          <p>
+            Россия, г. Нижний Новгород, ул. Юлиуса Фучика, дом 38, корпус 1,
+            офис 104
+          </p>
+          <p>ОГРН: 1205200042222 | ИНН: 5256192340</p>
+        </div>
+        <div class="footer-column footer-right">
+          <h4>Остались вопросы?</h4>
+          <p>+7 (952) 770-08-83</p>
+          <button>Перезвоните мне</button>
+        </div>
       </div>
-      <div class="faq-answer">
-        Да, мы работаем официально по договору с юр. и физ. лицами.<br><br>
-        Фиксируем цены и наши гарантийные обязательства.<br>
-        Так же с юр. лицами всех форм налогооблажения.
-      </div>
     </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Можете сделать срочный монтаж?</span>
-        <span class="faq-plus">+</span>
-      </div>
-      <div class="faq-answer">
-        Да, можем. Сделаем в течение 3х дней после заявки. Цена срочного монтажа в 2 раза больше цены стандартного.
-    </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Как часто нужно обслуживать кондиционер?</span>
-        <span class="faq-plus">+</span>
-      </div>
-      <div class="faq-answer">
-        В руководстве по эксплуатации рекомндуется обслуживать кондиционер раз в год, рекомендуем обращаться после сентября, чтобы получить услугу по лучшей цене и максимально оперативно.
-    </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Сколько времени займет установка кондиционера?</span>
-        <span class="faq-plus">+</span>
-      </div>
-      <div class="faq-answer">
-        В зависимости от сложности, стандартный монтаж занимает от 1.5 до 3 часов.
-    </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>Что делать при гарантийной поломке?</span>
-        <span class="faq-plus">+</span>
-      </div>
-      <div class="faq-answer">
-        Заводские браки и ошибки монтажа решаем за свой счет.
-    </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>В каких сегментах вы работаете?</span>
-        <span class="faq-plus">+</span>
-      </div>
-      <div class="faq-answer">
-        Доступный (Бюджетный вариант, гарантия - 3 года)<br><br>
-        Средний класс (Вариант с расширенным функционалом, гарантия - 3 года)<br><br>
-        Бизнес класс (Комфортный, тихий, качественный, надежный вариант от мировых лидеров в сфере клим. оборудования. Гарантия - 5 лет)<br><br>
-        Премиум класс (Передовой высокотехнологичный вариант. Гарантия - 7 лет)
-    </div>
-    </div>
-  </div>
-</div>
-      <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
