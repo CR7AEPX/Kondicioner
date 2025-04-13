@@ -67,13 +67,24 @@ nextBtn.addEventListener("click", nextSlide);
 window.addEventListener("resize", updateSliderWidth);
 window.addEventListener("load", updateSliderWidth);
 
-let auto = setInterval(nextSlide, 4000);
-document
-  .querySelector(".slider-wrapper")
-  .addEventListener("mouseenter", () => clearInterval(auto));
-document
-  .querySelector(".slider-wrapper")
-  .addEventListener("mouseleave", () => (auto = setInterval(nextSlide, 4000)));
+let auto;
+function slideLoop() {
+  nextSlide();
+  auto = requestAnimationFrame(() => {
+    setTimeout(slideLoop, 4000);
+  });
+}
+auto = requestAnimationFrame(() => {
+  setTimeout(slideLoop, 4000);
+});
+document.querySelector(".slider-wrapper").addEventListener("mouseenter", () => {
+  cancelAnimationFrame(auto);
+});
+document.querySelector(".slider-wrapper").addEventListener("mouseleave", () => {
+  auto = requestAnimationFrame(() => {
+    setTimeout(slideLoop, 4000);
+  });
+});
 (function () {
   var myReviewsInit = function () {
     new window.myReviews.BlockWidget({
