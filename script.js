@@ -120,28 +120,31 @@ faqItems.forEach((item) => {
   }
   item.addEventListener("click", toggleFAQ);
 });
-window.addEventListener('DOMContentLoaded', () => {
-  if (!localStorage.getItem('cookiesAccepted')) {
-    document.getElementById('cookie-banner').style.display = 'flex';
+window.addEventListener("DOMContentLoaded", () => {
+  const cookieBanner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+  const modal = document.getElementById("modal");
+  const open = document.getElementById("show-policy");
+  const close = document.getElementById("close-modal");
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    cookieBanner.style.display = "none";
+  } else {
+    cookieBanner.style.display = "flex";
   }
-  document.getElementById('accept-cookies').addEventListener('click', () => {
-    localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById('cookie-banner').style.display = 'none';
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookieBanner.style.display = "none";
   });
-  const modal = document.getElementById('modal');
-  const open = document.getElementById('show-policy');
-  const close = document.getElementById('close-modal');
-  open.addEventListener('click', (e) => {
+  open.addEventListener("click", (e) => {
     e.preventDefault();
-    modal.style.display = 'block';
+    modal.style.display = "block";
   });
-  close.addEventListener('click', () => {
-    modal.style.display = 'none';
+  close.addEventListener("click", () => {
+    modal.style.display = "none";
   });
-
-  window.addEventListener('click', (e) => {
+  window.addEventListener("click", (e) => {
     if (e.target === modal) {
-      modal.style.display = 'none';
+      modal.style.display = "none";
     }
   });
 });
