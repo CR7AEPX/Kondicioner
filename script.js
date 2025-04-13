@@ -126,14 +126,19 @@ window.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modal");
   const open = document.getElementById("show-policy");
   const close = document.getElementById("close-modal");
-  if (localStorage.getItem("cookiesAccepted") === "true") {
-    cookieBanner.style.display = "none";
-  } else {
+
+  if (localStorage.getItem("cookiesAccepted") !== "true") {
     cookieBanner.style.display = "flex";
+    requestAnimationFrame(() => {
+      cookieBanner.classList.add("show");
+    });
   }
   acceptBtn.addEventListener("click", () => {
     localStorage.setItem("cookiesAccepted", "true");
-    cookieBanner.style.display = "none";
+    cookieBanner.classList.remove("show");
+    setTimeout(() => {
+      cookieBanner.style.display = "none";
+    }, 1000);
   });
   open.addEventListener("click", (e) => {
     e.preventDefault();
