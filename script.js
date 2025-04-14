@@ -1,28 +1,3 @@
-let totalSeconds = 6 * 3600 + 14 * 60 + 49;
-function updateCountdown() {
-  if (totalSeconds <= 0) {
-    document.getElementById("hours").textContent = "00";
-    document.getElementById("minutes").textContent = "00";
-    document.getElementById("seconds").textContent = "00";
-    return;
-  }
-
-  let hours = Math.floor(totalSeconds / 3600);
-  let minutes = Math.floor((totalSeconds % 3600) / 60);
-  let seconds = totalSeconds % 60;
-
-  hours = hours < 10 ? "0" + hours : hours;
-  minutes = minutes < 10 ? "0" + minutes : minutes;
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-
-  document.getElementById("hours").textContent = hours;
-  document.getElementById("minutes").textContent = minutes;
-  document.getElementById("seconds").textContent = seconds;
-
-  totalSeconds--;
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
 const track = document.getElementById("sliderTrack");
 const prevBtn = document.querySelector(".slider-btn.prev");
 const nextBtn = document.querySelector(".slider-btn.next");
@@ -150,6 +125,24 @@ window.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.style.display = "none";
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const openBtns = document.querySelectorAll(".open-callback");
+  const modal = document.getElementById("callback-modal");
+  const closeBtn = document.getElementById("callback-close");
+  openBtns.forEach(openBtn => {
+    openBtn.addEventListener("click", () => {
+      modal.classList.add("show");
+    });
+  });
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("show");
+  });
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.remove("show");
     }
   });
 });
