@@ -292,6 +292,9 @@ button:hover {
     width: 100%;
   }
 }
+@media (min-width: 1200px) {
+      margin-top: -280px;
+  }
 .brends h2 {
   font-weight: 600;
   text-align: center;
