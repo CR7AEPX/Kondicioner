@@ -261,7 +261,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   .special-offer-section {
-    margin-top: -600px;
+    margin-top: -630px;
   }
   .offer-top {
     flex-direction: column;
