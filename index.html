@@ -26,7 +26,7 @@
         <div class="header">
           <img class="logo" src="logo CS_white_2.png" alt="Логотип" />
           <p class="phone">
-            +7 (952) 770-08-83<br /><span>Позвоните мне</span>
+            +7 (952) 770-08-83<br /><span class="open-callback">Позвоните мне</span>
           </p>
         </div>
         <div class="content">
@@ -39,40 +39,26 @@
     </div>
     <div class="special-offer-section">
       <div class="offer-top">
-        <img
-          src="Girl.png"
-          alt="Специальное предложение"
-          class="offer-image"
-        />
-        <div class="offer-info">
-          <h2>СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ!!!</h2>
-          <p>
-            ТОРОПИТЕСЬ! <br />
-            ПРЕДЛОЖЕНИЕ ОГРАНИЧЕНО!
-          </p>
-          <div class="countdown">
-            <span id="hours">06</span>: <span id="minutes">14</span>:
-            <span id="seconds">49</span>
-            <div class="units">
-              <span>часов</span>
-              <span>минут</span>
-              <span>секунд</span>
-            </div>
-          </div>
+        <div class="video-wrapper">
+          <iframe
+            src="https://rutube.ru/play/embed/87ed28e77852ce69b505009e03daedde"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="offer-form">
+          <h3>
+            ЗАПОЛНИТЕ ФОРМУ, чтобы получить кондиционер по специальному предложению
+          </h3>
+          <form>
+            <input type="text" name="name" placeholder="Ваше имя" required />
+            <input type="tel" name="phone" placeholder="Телефон" required />
+            <button type="submit">Получить предложение</button>
+          </form>
         </div>
       </div>
-      <div class="offer-bottom">
-        <h3>
-          ЗАПОЛНИТЕ ФОРМУ, чтобы получить кондиционер по специальному
-          предложению
-        </h3>
-        <form>
-          <input type="text" name="name" placeholder="Ваше имя" required />
-          <input type="tel" name="phone" placeholder="Телефон" required />
-          <button type="submit">Получить предложение</button>
-        </form>
-      </div>
     </div>
+    
     <div class="brends">
       <h2>НЕСКОЛЬКО БРЕНДОВ В ОДНОЙ АКЦИИ</h2>
       <div class="logos">
@@ -454,7 +440,7 @@
         <div class="footer-column footer-right">
           <h4>Остались вопросы?</h4>
           <p>+7 (952) 770-08-83</p>
-          <button>Перезвоните мне</button>
+          <button class="open-callback">Перезвоните мне</button>
         </div>
       </div>
     </div>
@@ -480,6 +466,21 @@
         <p>
           При возникновении вопросов, вы можете связаться с нами через форму обратной связи.
         </p>
+      </div>
+    </div>
+    <div id="callback-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span id="callback-close" class="close-btn">&times;</span>
+        <h2 class="modalh2">Заказ обратного звонка</h2>
+        <form id="callback-form" class="callback-form">
+          <input type="text" placeholder="Ваше имя" required />
+          <input type="tel" placeholder="Ваш номер телефона" required />
+          <label class="checkbox-label">
+            <input type="checkbox" required />
+            Я согласен с <a href="#">политикой конфиденциальности</a>
+          </label>
+          <button type="submit" class="submit-btn">Перезвоните мне</button>
+        </form>
       </div>
     </div>
     <script src="script.js"></script>
