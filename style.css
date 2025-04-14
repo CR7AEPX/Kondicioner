@@ -260,6 +260,9 @@ button:hover {
   background-color: #ffa500;
 }
 @media (max-width: 768px) {
+  .special-offer-section {
+    margin-top: -770px;
+  }
   .offer-top {
     flex-direction: column;
     width: 100%;
@@ -1066,4 +1069,9 @@ button:hover {
 .submit-btn:hover {
   background-color: #005fc4;
   color: white;
+}
+@media (max-width: 768px) {
+  .checkbox-label {
+    font-size: 12px;
+  }
 }
