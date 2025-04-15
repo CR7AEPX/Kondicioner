@@ -259,6 +259,11 @@ button:hover {
 .offer-form button:hover {
   background-color: #ffa500;
 }
+@media (min-width: 1200px) {
+  .special-offer-section {
+    margin-top: -250px;
+  }
+}
 @media (max-width: 768px) {
   .special-offer-section {
     margin-top: -620px;
@@ -292,10 +297,6 @@ button:hover {
     width: 100%;
   }
 }
-@media (min-width: 1200px) {
-  .special-offer-section {
-    margin-top: -280px;
-  }
 .brends h2 {
   font-weight: 600;
   text-align: center;
