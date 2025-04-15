@@ -1,3 +1,11 @@
+document.querySelectorAll('.scrollToOffer').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = document.getElementById('offer');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
 const track = document.getElementById("sliderTrack");
 const prevBtn = document.querySelector(".slider-btn.prev");
 const nextBtn = document.querySelector(".slider-btn.next");
@@ -132,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const openBtns = document.querySelectorAll(".open-callback");
   const modal = document.getElementById("callback-modal");
   const closeBtn = document.getElementById("callback-close");
-  openBtns.forEach(openBtn => {
+  openBtns.forEach((openBtn) => {
     openBtn.addEventListener("click", () => {
       modal.classList.add("show");
     });
